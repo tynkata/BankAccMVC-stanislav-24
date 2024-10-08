@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BankAccMVC.View
 {
-    internal class BankAccountView
+    public class BankAccountView
     {
+        public void DisplayAccountDetails(BankAccount account) =>
+            Console.WriteLine($"Id: {account.Id}, Amount: {account.Amount}, Name: {account.Name}");
+
+        public void DisplayMessage(string message) => Console.WriteLine(message);
     }
+
 }
+
